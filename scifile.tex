@@ -32,6 +32,10 @@
 \usepackage{times}
 \usepackage{indentfirst}
 
+
+\graphicspath{ {Images/} }
+
+
 % The preamble here sets up a lot of new/revised commands and
 % environments.  It's annoying, but please do *not* try to strip these
 % out into a separate .sty file (which could lead to the loss of some
@@ -76,6 +80,7 @@
 {\setlength{\leftmargin}{.22in}}
 {\setlength{\labelsep}{.5em}}}
 {\end{list}}
+
 
 
 \tikzstyle{member} = [circle, minimum width= 2cm, minimum height=0.75cm,text centered, text width = 2cm, draw=black]
@@ -159,7 +164,7 @@ To address the issue of WNS in metapopulations of little brown bats, we created 
 
 \subsection*{\sc \textit{Model Development}}
 
-To estimate the effects of WNS on the total bat population, we must first determine the interactions between subpopulations within the metapopulation. In our model we assume a spider metapopulation model in which there are 4 total patches, each patch is equally accessible to each individual from the main central population but, not equally accessible from peripheral patches (all individuals must return to the main population before moving to another patch). We assume this type of model as bats tend to migrate distances of between 35 – 554km which means if patches are spread out they are more likely to migrate to the intermediate, central patch rather than distant patches (Dubois & Monson, 2007). For our initial year (n0) we assume that there is only 1 occupied patch which contains the total population of bats within this metapopulation. We assume a frequency dependent migration rate (see Table 1) of the total population and we also assume that the likelihood of a bat migrating from the central patch to a peripheral patch is equal between all patches but if migrating from a peripheral patch the only outcome is migration to the central patch (Figure 1 (b)). Therefore, the migration rate going into the central population is µ, while the migration rate leaving the central population is µ/3 (µ/all possible patches).
+To estimate the effects of WNS on the total bat population, we must first determine the interactions between subpopulations within the metapopulation. In our model we assume a spider metapopulation model in which there are 4 total patches, each patch is equally accessible to each individual from the main central population but, not equally accessible from peripheral patches (all individuals must return to the main population before moving to another patch). We assume this type of model as bats tend to migrate distances of between 35 – 554km which means if patches are spread out they are more likely to migrate to the intermediate, central patch rather than distant patches (Dubois \& Monson, 2007). For our initial year (n0) we assume that there is only 1 occupied patch which contains the total population of bats within this metapopulation. We assume a frequency dependent migration rate (see Table 1) of the total population and we also assume that the likelihood of a bat migrating from the central patch to a peripheral patch is equal between all patches but if migrating from a peripheral patch the only outcome is migration to the central patch (Figure 1 (b)). Therefore, the migration rate going into the central population is $\mu$, while the migration rate leaving the central population is $\mu/3$ ($\mu$/all possible patches).
 
 In order to track the spread of the disease we use an SIR model for each subpopulation within the total metapopulation. In our SIR model we model the proportion of the population that is either susceptible (S), exposed (E), recently infected (I1) or infected for more than 1 year (I2) (see figure 1(a) for flow diagram of model). An individual is considered susceptible if they do not have the infection and are not in contact with an infected individual. An individual is considered exposed if they are uninfected but are in contact with an infected individual. An individual is considered recently infected if they have contracted the disease within the year. An individual is considered infected for more than one year if they have been infected for more than one year. In our model we separate infected individuals based on how long they have been infected because there is research that shows mortality of recently infected individuals is lower than an individual has been infected for more than a year (Frick et al, 2010).
 
@@ -282,10 +287,10 @@ The main purpose of this model is to determine the resilience of native bat popu
         \hline
         Symbol  &   Description & Units &  Value & Notes\\\hline
         \beta   &   Transmissive contact between susceptible and exposed and infected bats & $y^{-1}$ & $0-766.5$ & estimated  from Meyer \textit{et al.} (2016)\\
-        \tau    &   Annual rate of progression from exposed to infectious & $y^{-1}$ & 365/83 & (Meyer \textit{et al.}, 2016; Lorch \textit{et al.} 2011)\\
+        \tau    &   Annual rate of progression from exposed to infectious & $y^{-1}$ & $365/83$ & (Meyer \textit{et al.}, 2016; Lorch \textit{et al.} 2011)\\
         \gamma & Annual rate of bat maturation & $y^{-1}$ & 0.762 & average of rates for males and females from Keen \& Hitchcock(1980)\\
         $a_1$ & the probability of recovery of exposed bats and bats infected for under one year & unitless & 0.75 & (Meyer \textit{et al.} 2016)\\
-        $a_2$ & the probability of recovery of bats infected for at least two yeasr & unitless & 1/11 & (Meyer \textit{et al.} 2016)\\
+        $a_2$ & the probability of recovery of bats infected for at least two yeasr & unitless & $1/11$ & (Meyer \textit{et al.} 2016)\\
         $m_1$ & mortality of bats infected for one year & $y^{-1}$ & 0.20 & (Frick \textit{et al.} 2010)\\
         $m_2$ & mortality of bats infected for at least two years & $y^{-1}$ & 0.70 & (Frick \textit{et al.} 2010)\\
         $\mu$ & annual migration rate between populations & $y^{-1}$& 0.04 & (Norquay \textit{et al.} 2013) \\\hline

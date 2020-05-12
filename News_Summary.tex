@@ -1,0 +1,52 @@
+\documentclass[11pt, letter]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+%\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+%\usepackage{ltablex}
+\usepackage{wrapfig}
+\usepackage{fancyhdr}
+\usepackage{placeins}
+\usepackage{fullpage}
+\usepackage[shortlabels]{enumitem}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{multicol}
+\usepackage{amsmath}
+
+\title{\textbf{News Summary\\ Modeling Disease dynamics of White-Nose Syndrome in a Little Brown Bat \\ (\textit{Myotis lucifugus}) Metapopulation \\ \Large BIOD59H: Models in Ecology, Epidemiology, and Conservation}}
+\author{\sc Pranav Sadana \\ 1003655859}
+\date{}
+
+%\linespread{1.3}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{BIOD59H}
+\rhead{Sadana \thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headheight}{20pt}
+\setlength{\headsep}{0.2in}
+
+\graphicspath{ {Images/} }
+
+%components of the flowchart
+\tikzstyle{member} = [rectangle, minimum width=3cm, minimum height=0.75cm,text centered, text width = 3cm, draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{document}
+
+\maketitle
+\hrulefill
+%\vspace{0.25cm}
+
+\thispagestyle{empty}
+
+\vspace{1cm}
+
+White-nose syndrome is an infection in bats caused by the fungus \textit{Pseudogymnoascus destructans}. The infection results in increased metabolic needs in bats. In the summer, these higher metabolic needs are satisfied by increased foraging. However, in the winter, these increased needs disrupt hibernation, thereby, in the absence of food, increasing mortality. In Ontario, the Little Brown Bat is one of the species affected by this deadly disease. Past research has looked at the spread of this disease within a population. However, bats migrate between populations, such as caves, for food and roosting during the summer. A collection of such populations in a region forms a metapopulation. In this study, we developed a mathematical model to predict the effect of migration in a metapopulation of little brown bats on the spread of the white-nose syndrome. The model shows us the population dynamics of each of population indicating the proportion of susceptible, exposed, infectious bats in the metapopulation. The results yielded show that, given current estimates for disease transmission rates and migration rates for Little Brown Bats, each population can be expected to decline in 8-10 years which is the same a mean natural life expectancy of the bats. Even in the case that a new empty cave is available, a small population of uninfected bats may establish but further research needs to be done if this population will be sustainable. Although our model accounts for the migration between populations, we need to make the predictions more precise by increasing realism of the model by including parameters such as birth rates and transmission of the infection through contact with the environment. Nonetheless, our model predictions highlight the need for conservation efforts in controlling the transmission of the disease. 
+
+\end{document}
