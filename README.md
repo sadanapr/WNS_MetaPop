@@ -1,2 +1,6 @@
 # WNS_MetaPop
 Modeling the spread of White Nose Syndrome in Little Brown Bats due to migration within a metapopulation
+
+## Abstract
+Bats spend most of their time in close proximities of each other through the year. They move in around between caves in the summer and hibernating in the winter. This has led to the spread of the fungal infection White-Nose Syndrome (WNS), one of the deadliest epidemics in the populations of bats in North America. In this paper, we develop a disease dynamics model for the Little Brown Bat and WNS. Although previous models have looked at WNS, the effect of a metapopulation structure with migration between varying populations has not be explored. We use a system of ordinary differential equations, a sensitivity analyses and population viability analyses to look at WNS dynamics. Results show that high transmissive contact rate leads to high exposure to WNS in population. Migration within the metapopulation leads to increased population declines. Although larger population sizes eventually lead to a stabilizing population on an empty patch, most of the metapopulation dies before natural mortality age. Our results highlight the need for mechanistic transmission studies and focused conservation efforts for population of Little Brown Bats. 
+  
